@@ -32,3 +32,7 @@ Route::delete('/quote/{id}', [
 Route::post('/user', [
     'uses' => 'UserController@signup'
 ]);
+
+Route::post('/user/signin', [
+    'uses' => 'UserController@signin'
+]);
